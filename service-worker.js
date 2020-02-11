@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/F2E_LEVEL10_MASKMAP/precache-manifest.bd061dbaea201ff7a5205f2bfa1325f4.js"
+  "/F2E_LEVEL10_MASKMAP/precache-manifest.d4e94e92fdde7a49b7d9cf1224772da2.js"
 );
 
 self.addEventListener('message', (event) => {
