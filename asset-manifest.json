@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/F2E_LEVEL10_MASKMAP/static/css/main.1b8ac635.chunk.css",
+    "main.js": "/F2E_LEVEL10_MASKMAP/static/js/main.66c85dd0.chunk.js",
+    "main.js.map": "/F2E_LEVEL10_MASKMAP/static/js/main.66c85dd0.chunk.js.map",
+    "runtime-main.js": "/F2E_LEVEL10_MASKMAP/static/js/runtime-main.daf87a60.js",
+    "runtime-main.js.map": "/F2E_LEVEL10_MASKMAP/static/js/runtime-main.daf87a60.js.map",
+    "static/js/2.c6e1b28e.chunk.js": "/F2E_LEVEL10_MASKMAP/static/js/2.c6e1b28e.chunk.js",
+    "static/js/2.c6e1b28e.chunk.js.map": "/F2E_LEVEL10_MASKMAP/static/js/2.c6e1b28e.chunk.js.map",
+    "index.html": "/F2E_LEVEL10_MASKMAP/index.html",
+    "precache-manifest.86232e646eef758282afff4f28de6ce4.js": "/F2E_LEVEL10_MASKMAP/precache-manifest.86232e646eef758282afff4f28de6ce4.js",
+    "service-worker.js": "/F2E_LEVEL10_MASKMAP/service-worker.js",
+    "static/css/main.1b8ac635.chunk.css.map": "/F2E_LEVEL10_MASKMAP/static/css/main.1b8ac635.chunk.css.map",
+    "static/js/2.c6e1b28e.chunk.js.LICENSE.txt": "/F2E_LEVEL10_MASKMAP/static/js/2.c6e1b28e.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.daf87a60.js",
+    "static/js/2.c6e1b28e.chunk.js",
+    "static/css/main.1b8ac635.chunk.css",
+    "static/js/main.66c85dd0.chunk.js"
+  ]
+}
