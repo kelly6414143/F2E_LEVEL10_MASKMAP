@@ -138,7 +138,7 @@ export default function PharmacyList (props) {
         setOpen(false);
     };
 
-    // console.log(modelPos)
+    // console.log(props.storeList)
     return (
         <>
         <Card className={ classes.root }>

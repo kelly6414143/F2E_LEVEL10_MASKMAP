@@ -23,10 +23,12 @@ export default function App() {
   const [storeList, setStorList] = useState([])
   const [searchStoreList, setSearchStoreList] = useState([])
   const getSearchStore = (storeList)=>{
+
     setStorList(storeList)
     setSearchStoreList(storeList)
   }
   const getStore = (storeData)=>{
+
     if(typeof storeData ==="string"){
       setStorList(searchStoreList)
       return

@@ -90,13 +90,13 @@ export default function SearhBox (props) {
         if (cityList.length < 1) return
 
         setCity(city => {
-            // console.log(cityList.indexOf(city))
+            // console.log(city,cityList.indexOf(city))
             if(cityList.indexOf(city) < 0) return cityList[ 0 ]
             city = city || cityList[ 0 ]
             return city
         })
         let currentPharmacyList = allList.filter(
-            area => area.properties.town === cityList[ 0 ])
+            area => area.properties.town === city)
         props.getStoreList(currentPharmacyList)
         // console.log(currentPharmacyList)
     }, [ area, allList ])
@@ -137,6 +137,7 @@ export default function SearhBox (props) {
     }
 
     const getApi = () => {
+        // console.log(city)
         document.getElementById('loading').style.display = "block"
         getParmacyList().then(response => {
             const { data: res } = response
