@@ -35,6 +35,9 @@ export default function App() {
   }
   return (
       <div className={classes.root}>
+        <div id="loading">
+          <span className="loding-title">Loading...</span>
+        </div>
         <Grid container style={{position:"absolute"}}>
           <Grid item>
             <SearhBox

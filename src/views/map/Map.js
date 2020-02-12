@@ -36,7 +36,7 @@ function MapContainer (props) {
     return (
         <Map
             google={ props.google }
-            zoom={ 18 }
+            zoom={ 17 }
             style={ mapStyles }
             initialCenter={ centerPos }
             center={centerPos}

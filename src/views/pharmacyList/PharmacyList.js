@@ -19,6 +19,7 @@ import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
+import RotateLeftIcon from '@material-ui/icons/RotateLeft';
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -69,9 +70,8 @@ const useStyles = makeStyles(theme => ({
     },
     modal: {
         position: 'absolute',
-        maxWidth: 520,
         height: 260,
-        overflowY: 'scroll'
+        overflowY: 'scroll',
         // display: 'flex',
         // alignItems: 'center',
         // justifyContent: 'center',
@@ -83,7 +83,7 @@ const useStyles = makeStyles(theme => ({
         padding: theme.spacing(2, 4, 3),
     },
     table: {
-        minWidth: 200,
+        // minWidth: 100,
     },
 }))
 
@@ -126,14 +126,19 @@ export default function PharmacyList (props) {
             'calc(100vh - 270px)':e.clientY
         setOpen(true);
         setCurrentStore(store)
-        setModelPos({x:e.clientX,y:y})
+        // console.log(window.screen.width)
+        if(window.screen.width<500){
+            setModelPos({x:'calc(50% - 125px)',y:'calc(100vh - 270px)',width: '250px'})
+            return
+        }
+        setModelPos({x:e.clientX-20,y:y, width: '500px'})
     }
 
     const hideDetail = () => {
         setOpen(false);
     };
 
-
+    // console.log(modelPos)
     return (
         <>
         <Card className={ classes.root }>
@@ -205,7 +210,8 @@ export default function PharmacyList (props) {
                 }}
                 style={{
                     top: modelPos.y,
-                    left: modelPos.x + 20
+                    left: modelPos.x,
+                    maxWidth: modelPos.width
                 }}
             >
                 <Fade in={open}>
@@ -214,7 +220,7 @@ export default function PharmacyList (props) {
                             {currentStore.name} &nbsp;
                             <span style={{fontSize:12, color: 'grey'}}>(更新時間 : {currentStore.updated})</span>
                         </h2>
-                        <p id="transition-modal-description">看診時間 : </p>
+                        <p id="transition-modal-description">營業時間 : </p>
                         <TableContainer component={Paper}>
                             <Table className={classes.table} size="small" aria-label="a dense table">
                                 <TableHead>
